@@ -1,0 +1,25 @@
+.nav{
+    margin-top: 2%;
+    width: 42%;
+    margin-left: 29%;
+}
+
+.img{
+    background-color: rgb(0, 0, 0);
+}
+
+.price{
+    background-color: rgb(45, 45, 45);
+    text-align: right;
+
+}
+
+.store{
+    background-color: rgb(91, 91, 91);
+    margin-left: 1%;
+}
+
+.rows{
+    margin-left: 15%;
+    margin-top: 2%;
+}

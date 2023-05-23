@@ -1,0 +1,20 @@
+.body{
+    background-color: #333333;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+        Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    color: antiquewhite
+}
+
+.footer{
+    background-color: #1a1a1a;
+    margin-top: 10%;
+}
+
+.main{
+    padding-left: 3%;
+    padding-right: 3%;
+}

@@ -1,0 +1,16 @@
+.centerLog{
+    margin-top: 6%;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.title{
+    text-align: center;
+    margin-top: 4%;
+    color: antiquewhite;
+}
+
+.inputPlace{
+    width: 18%;
+    margin-bottom: 1%;
+}
