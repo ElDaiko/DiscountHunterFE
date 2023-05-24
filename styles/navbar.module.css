@@ -1,0 +1,19 @@
+.searchBar {
+    position: relative
+}
+
+.listResults {
+    position: absolute;
+    top: 100%;
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    list-style: none;
+    z-index: 1;
+}
+
+.listResults li{
+    padding: 2%;
+    border-bottom: 1px solid black;
+}

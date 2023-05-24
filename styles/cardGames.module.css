@@ -11,3 +11,26 @@
 .feturedTitle{
     color: antiquewhite;
 }
+
+.overText{
+    position: absolute;
+    top: 75%;
+    left: 20px;
+}
+
+.topData{
+    margin-top: 3%;
+}
+
+.centerLeft{
+    padding-top: 10%;
+}
+
+.lineT{
+    text-decoration-line: line-through;
+}
+
+.priceMargin{
+    margin-top: 6%;
+    text-decoration-line: line-through;
+}

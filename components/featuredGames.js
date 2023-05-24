@@ -23,13 +23,13 @@ const FeaturedGames = () => {
     return (
 
         <div className={`col-12 col-lg-7 ${styles.featuredCard}`}>
-            <h2 className={styles.feturedTitle}>FeaturedGames</h2>
+            <h2 className={styles.feturedTitle}>Featured Games</h2>
             <Carousel showArrows={true} showThumbs={false} autoPlay={true} infiniteLoop={true}>
                 {featuredList.map((game) => (
-
                     <div key={game.gameID}>
-                        {console.log(game.steamAppID)}
-                        <ImageGame game={game} />
+                            <h3 className={`${styles.overText} ${styles.feturedTitle}`}>{game.title}</h3>
+                            <h3 className={`${styles.topData} ${styles.overText} ${styles.feturedTitle}`}><span className={styles.lineT}>{game.normalPrice}$</span> {game.salePrice}$</h3>
+                        <ImageGame game={game} />   
                     </div>))}
 
             </Carousel>
