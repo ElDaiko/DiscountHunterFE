@@ -4,6 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState, useEffect } from "react";
 import ImageGame from "./imageGame";
+import {useRouter} from "next/navigation"
 
 const FeaturedGames = () => {
 

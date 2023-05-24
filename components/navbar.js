@@ -30,7 +30,6 @@ const Navigation = () => {
                 const storedToken = await localStorage.getItem("token")
                 setToken(storedToken)
                 const decoded = storedToken ? jose.decodeJwt(storedToken) : ""  // aqui se valida si se tiene el token
-                console.log(decoded);
                 setUser(decoded?.username)  //con el ? se indica que el objeto puede no existir
             }
         }

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Layout from "../components/layout"
 import styles from "../styles/login.module.css"
 import Link from 'next/link'
@@ -15,8 +15,6 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const token = await login(name, password)
-        console.log(name, password)
-        console.log(token);
         localStorage.setItem("token", token.token)  //Se maneja en el almacenamiento local el usuer
         push("/")
     }
@@ -25,6 +23,17 @@ const Login = () => {
         const {data} = await axios.post('http://localhost:8698/signInUser', {email, password})
         return data 
     }
+
+    const logValidation = () => {
+        const storedToken = localStorage.getItem("token")
+        if(storedToken != null){
+            push("/")
+        }
+    }
+
+    useEffect(() => {
+        logValidation()
+    }, []);    
 
     return (
         <Layout>

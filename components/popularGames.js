@@ -18,11 +18,12 @@ const PopularGames = () => {
 
     return (
         <div className={`col-12 col-lg-4`}>
-            <h2 className={styles.discountTitle}>Best Discounts</h2>
+            <h2 className={styles.discountTitle}>Popular Games</h2>
             <div className={styles.discountDiv}>
                 {popularGame.map((game) => (
+                    
                     <div key={game.info.gameId}>
-                        <GamePreview image={game.info.thumb} title={game.info.title} price={game.info.deal.price} />
+                        <GamePreview image={game.info.thumb} title={game.info.title} price={game.info.deal.price} id={game.info.gameId}/>
                         <p>{parseInt(game.info.deal.savings).toFixed(1)}%</p>
                     </div>
                 ))}

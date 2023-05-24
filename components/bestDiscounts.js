@@ -23,7 +23,7 @@ const BestDiscounts = () => {
             <div className={styles.discountDiv}>
                 {bestGame.map((game) => (
                     <div key={game.gameID}>
-                        <GamePreview image={game.thumb} title={game.title} price={game.salePrice} />
+                        <GamePreview image={game.thumb} title={game.title} price={game.salePrice} id={game.gameID} />
                     </div>
                 ))}
             </div>
